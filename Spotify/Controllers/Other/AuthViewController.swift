@@ -24,7 +24,7 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Sign in"
+        title = "Sign In"
         view.backgroundColor = .systemBackground
         webView.navigationDelegate = self
         view.addSubview(webView)
@@ -43,21 +43,15 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         guard let url = webView.url else {
             return
         }
-        
+
         // if the url has a parameter for code we want to get that out
         // Exchange spotify code for access token
-        guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: {$0.name == "code"})?.value else {
+        guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: { $0.name == "code"  })?.value else {
             return
         }
         webView.isHidden = true
-        print("code: \(code)")
-//        AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
-//            DispatchQueue.main.async {
-//                self?.navigationController?.popToRootViewController(animated: true)
-//                self?.completionHandler?(success)
-//            }
-//        }
-        AuthManager.shared.getBearerToken { [weak self] success in
+
+        AuthManager.shared.exchangeCodeForToken(code: code) { [weak self] success in
             DispatchQueue.main.async {
                 self?.navigationController?.popToRootViewController(animated: true)
                 self?.completionHandler?(success)

@@ -26,6 +26,8 @@
 		311C171327FB39EB00A51F9F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C171227FB39EB00A51F9F /* UserProfile.swift */; };
 		311C171527FB562800A51F9F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C171427FB562800A51F9F /* Extensions.swift */; };
 		311C171727FB79FA00A51F9F /* AuthResonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C171627FB79FA00A51F9F /* AuthResonse.swift */; };
+		311C171927FC89BC00A51F9F /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C171827FC89BC00A51F9F /* APIImage.swift */; };
+		311C171B27FC8BB900A51F9F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C171A27FC8BB900A51F9F /* SettingsModel.swift */; };
 		31AC5FCD27FB332100DA492C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AC5FCC27FB332100DA492C /* AppDelegate.swift */; };
 		31AC5FCF27FB332100DA492C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AC5FCE27FB332100DA492C /* SceneDelegate.swift */; };
 		31AC5FD127FB332100DA492C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AC5FD027FB332100DA492C /* HomeViewController.swift */; };
@@ -53,6 +55,8 @@
 		311C171227FB39EB00A51F9F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		311C171427FB562800A51F9F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		311C171627FB79FA00A51F9F /* AuthResonse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResonse.swift; sourceTree = "<group>"; };
+		311C171827FC89BC00A51F9F /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
+		311C171A27FC8BB900A51F9F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		31AC5FC927FB332100DA492C /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AC5FCC27FB332100DA492C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31AC5FCE27FB332100DA492C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				311C171027FB39DE00A51F9F /* Artist.swift */,
 				311C171227FB39EB00A51F9F /* UserProfile.swift */,
 				311C171627FB79FA00A51F9F /* AuthResonse.swift */,
+				311C171827FC89BC00A51F9F /* APIImage.swift */,
+				311C171A27FC8BB900A51F9F /* SettingsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311C171B27FC8BB900A51F9F /* SettingsModel.swift in Sources */,
 				311C16F327FB38D100A51F9F /* SearchViewController.swift in Sources */,
+				311C171927FC89BC00A51F9F /* APIImage.swift in Sources */,
 				311C170D27FB39C600A51F9F /* Playlist.swift in Sources */,
 				311C170727FB399700A51F9F /* AuthManager.swift in Sources */,
 				311C170527FB397B00A51F9F /* SearchResultsViewController.swift in Sources */,
